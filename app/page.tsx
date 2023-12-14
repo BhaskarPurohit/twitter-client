@@ -62,7 +62,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-6 border-r-[1px] border-l-[1px] border-r-white">
+        <div className="col-span-6 border-r-[1px] border-l-[1px] border-gray-600">
         <FeedCard/>
         </div>
         <div className="col-span-3">
