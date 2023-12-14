@@ -2,6 +2,7 @@ import Image from "next/image";
 import { BsBell, BsBookmark, BsEnvelope, BsTwitter } from "react-icons/bs";
 import { BiHash, BiHomeCircle, BiUser } from "react-icons/bi";
 import { Inter } from "next/font/google";
+import FeedCard from "@/components/FeedCard";
 const inter = Inter({ subsets: ["latin"] });
 
 interface TwitterSideBarButton {
@@ -62,9 +63,11 @@ export default function Home() {
           </div>
         </div>
         <div className="col-span-6 border-r-[1px] border-l-[1px] border-r-white">
-          twitter
+        <FeedCard/>
         </div>
-        <div className="col-span-3">twitter</div>
+        <div className="col-span-3">
+          
+        </div>
       </div>
     </div>
   );
