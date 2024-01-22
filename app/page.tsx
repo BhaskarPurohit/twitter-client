@@ -73,9 +73,9 @@ export default function Home() {
           </div>
           <div className="mt-1 text-1xl  pr-4">
             <ul>
-              {sideBarMenuItems.map((item) => (
-                <li className="flex justify-start items-center gap-4 hover:bg-gray-600 rounded-full px-3 py-3 cursor-pointer w-fit mt-2">
-                  <span className="text-3xl">{item.icon}</span>
+              {sideBarMenuItems.map((item, index) => (
+                <li key={index} className="flex justify-start items-center gap-4 hover:bg-gray-600 rounded-full px-3 py-3 cursor-pointer w-fit mt-2">
+                  <span  className="text-3xl">{item.icon}</span>
                   <span className="text-xl">{item.title}</span>
                 </li>
               ))}
